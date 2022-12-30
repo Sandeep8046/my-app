@@ -1,6 +1,8 @@
 package com.mycompany.app;
 
-public class App 
+import java.util.Scanner;
+
+public class App
 {
   public static int add(int firstNumber, int secondNumber) {
     return firstNumber + secondNumber;
@@ -18,9 +20,20 @@ public class App
 
     return dividend / divisor;
   }
-  public static void main( String[] args )
-  {
-    System.out.println(App.add( 3, 3)); 
-  }
+  public static void main( String[] args ) {
+		int firstNumber,secondNumber;
+	Scanner in = new Scanner(System.in);
+	System.out.println("Enter 1st number");
+	firstNumber = in.nextInt();
+			
+	System.out.println("Enter 2nd Number:");
+	secondNumber = in.nextInt();
+	
+	System.out.println("Sum = "+(firstNumber + secondNumber));
+	System.out.println("Subtraction = "+(firstNumber - secondNumber));
+	System.out.println("Multiplication = "+(firstNumber * secondNumber));
+	System.out.println("Division = "+(firstNumber / secondNumber));
+}
+
 }
 
